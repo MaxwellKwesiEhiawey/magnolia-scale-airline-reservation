@@ -1,0 +1,40 @@
+title:  Home Page
+visible: true
+baseUrl: http://localhost:3000
+routeTemplate: '/{language}{{@path}}'
+renderType: spa
+class: info.magnolia.rendering.spa.renderer.SpaRenderableDefinition
+
+dialog: nexum-core-templating:pages/homepage
+
+areas:
+  main:
+    title: Main Area
+    availableComponents:
+      Headline:
+        id: nexum-core-templating:components/common/headline
+      Papragraph:
+        id: nexum-core-templating:components/common/paragraph
+      Banner:
+        id: nexum-core-templating:components/common/banner
+  news:
+    title: News Area
+    availableComponents:
+      newsTitle:
+        id: nexum-core-templating:components/common/headline
+      newsCard:
+        id: nexum-core-templating:components/news/news-highlight
+      Paragraph:
+        id: nexum-core-templating:components/common/paragraph
+  press:
+    title: Press Area
+    availableComponents:
+      pressTitle:
+        id: nexum-core-templating:components/common/headline
+      pressCard:
+        id: nexum-core-templating:components/press/press-highlights
+  footer:
+    title: Footer
+    availableComponents:
+      FooterArea:
+        id: nexum-core-templating:components/common/footerArea
